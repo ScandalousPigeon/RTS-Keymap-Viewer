@@ -8,15 +8,19 @@
 
 .keyboard {
   display: flex;
+  flex-direction: column;
   gap: 12px;
-  flex-wrap: wrap;
-  max-width: 500px;
+}
+
+.keyboard-row {
+  display: flex;
+  gap: 12px;
 }
 
 .key {
   position: relative;
-  width: 64px;
   height: 64px;
+  flex: 0 0 auto;
   border: 2px solid #4b5563;
   border-radius: 10px;
   background: #1f2937;
@@ -24,6 +28,9 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  padding: 0 8px;
+  box-sizing: border-box;
+  font-weight: 600;
 }
 
 .key:hover {
